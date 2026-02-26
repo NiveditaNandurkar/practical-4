@@ -1,1 +1,106 @@
-# practical-4
+# practical 4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        table {
+            width: 80%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Student Timetable</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Day</th>
+                <th colspan="4">Period</th>
+            </tr>
+            <tr>
+                <th>Period 1</th>
+                <th>Period 2</th>
+                <th>Period 3</th>
+                <th>Period 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>History</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Physical Education</td>
+                <td>Math</td>
+                <td class="highlight">Art</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>English</td>
+                <td>Music</td>
+                <td>Science</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>History</td>
+                <td>Geography</td>
+                <td>Physical Education</td>
+                <td class="highlight">Computer Science</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>English</td>
+                <td>Math</td>
+                <td>Art</td>
+                <td>Science</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
